@@ -11,7 +11,7 @@ export default function Home({ data }) {
       <main className="flex flex-col items-center">
         {data.map((data) => (
           <Link key={data.id} href={'/profile/' + data.id}>
-          <Card className="bg-gray-200" data={data} />
+          <Card data={data} />
           </Link>
         ))}
       </main>
